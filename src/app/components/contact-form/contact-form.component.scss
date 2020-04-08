@@ -1,0 +1,78 @@
+.form-wrapper {
+  background-color: black;
+  width: 100%;
+  height: 500px;
+  color: white;
+  display: flex;
+  display: flex;
+  justify-content: center;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 5rem;
+}
+
+.text h1 {
+  font-size: 4rem;
+  line-height: 4rem;
+  margin-bottom: 2rem;
+}
+
+.text .button, .text .button-rev {
+  margin-top: 2rem;
+}
+
+.button {
+  background: white;
+  color: black;
+  text-align: center;
+  max-width: 170px;
+  padding: 0.85rem;  
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+form {
+  padding: 5rem;
+}
+
+.form-control {
+  background: none;
+  padding: 0.75rem 1rem;
+  border: 1px solid white;
+  letter-spacing: 0.7px;
+}
+
+.name-row {
+  display: flex;
+}
+
+#email, #message {
+  width: 100%;
+}
+
+#email {
+  margin: 1rem 0;
+}
+
+#first-name {
+  margin-right: 1.5rem;
+}
+
+#first-name, #last-name {
+  width: 260px;
+}
+
+p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.75rem;
+}
+
+textarea {
+  font-family: Gotham;
+}

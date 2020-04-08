@@ -1,0 +1,16 @@
+<nav id="navbar" [ngClass]="{'nav-scrolled': navScrolled}" (scroll)="onWindowScroll($event)">
+  <div class="logo-wrapper" *ngIf="navScrolled">
+    <img src="../../../assets/images/logo-playground-black.png" />
+  </div>
+  <div class="logo-wrapper" *ngIf="!navScrolled">
+    <img src="../../../assets/images/logo-playground-white.png" />
+  </div>
+  <div class="menu-wrapper">
+    <ul class="menu" [ngClass]="{'nav-scrolled-menu': navScrolled}">
+      <li class="menu-item color-muted-white"><span>we are</span></li>
+      <li class="menu-item color-muted-white"><span>we do</span></li>
+      <li class="menu-item color-muted-white"><span>careers</span></li>
+      <li class="menu-item color-muted-white"><span>contact us</span></li>
+    </ul>
+  </div>
+</nav>
