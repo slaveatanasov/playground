@@ -12,11 +12,6 @@ export class CookiesPolicyComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    // if (localStorage.getItem('cookiesSet')) {
-    //   this.display = false;
-    // } else {
-    //   this.display = true;
-    // }
     this.display = true;
     this.removeContent = false;
   }

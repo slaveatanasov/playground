@@ -20,7 +20,8 @@
   margin-bottom: 2rem;
 }
 
-.text .button, .text .button-rev {
+.text .button,
+.text .button-rev {
   margin-top: 2rem;
 }
 
@@ -29,7 +30,7 @@ button {
   font-size: 100%;
   padding: 0;
   font-family: inherit;
-  padding: 0.9rem 3.1rem; 
+  padding: 0.9rem 3.1rem;
   margin-top: 1rem;
   font-size: 0.9rem;
   cursor: pointer;
@@ -39,17 +40,6 @@ button {
 button:not(:disabled):hover {
   box-shadow: 0px 0px 1px 9px rgba(255, 255, 255, 0.5);
 }
-
-// .button {
-//   background: white;
-//   color: black;
-//   text-align: center;
-//   max-width: 170px;
-//   padding: 0.85rem;  
-//   cursor: pointer;
-//   margin-top: 1rem;
-//   font-size: 0.9rem;
-// }
 
 form {
   padding: 5rem;
@@ -62,7 +52,8 @@ form {
   letter-spacing: 0.7px;
 }
 
-#email, #message {
+#email,
+#message {
   width: 100%;
 }
 
@@ -70,7 +61,8 @@ form {
   margin-right: 1.5rem;
 }
 
-#first-name, #last-name {
+#first-name,
+#last-name {
   width: 260px;
 }
 
@@ -87,7 +79,6 @@ textarea {
 .name-row {
   display: flex;
   margin: 1rem 0;
-
 }
 
 .email-row {
@@ -100,17 +91,15 @@ textarea {
   transition: 0.2s;
 }
 
-
 @media (max-width: 1128px) {
   .form-wrapper {
     height: auto;
-    // flex-direction: column;
   }
 
-  form, .text {
+  form,
+  .text {
     padding: 5rem 1rem;
   }
-
 }
 
 @media (max-width: 900px) {
@@ -119,22 +108,13 @@ textarea {
     flex-direction: column;
   }
 
-  .form-wrapper {
-    // flex-wrap: wrap;
-    // flex-direction: column;
-  }
-
-
-  #first-name, #last-name {
+  #first-name,
+  #last-name {
     width: 100%;
   }
 
   #last-name {
     margin-top: 1rem;
-  }
-
-  .text, .form {
-    // padding: 3rem 5rem 1rem 5rem;
   }
 }
 
@@ -152,14 +132,9 @@ textarea {
     padding-bottom: 1rem;
   }
 
-  form, .text {
+  form,
+  .text {
     width: 67%;
     margin: 0 auto;
   }
-
-  // .name-row {
-  //   height: auto;
-  //   flex-direction: column;
-  // }
 }
-

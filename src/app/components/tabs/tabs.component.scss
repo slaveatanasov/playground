@@ -32,7 +32,6 @@
   line-height: 50px;
   width: 320px;
   padding-left: 2rem;
-
   font-weight: 300;
   cursor: pointer;
   transition: 0.1s;
@@ -53,14 +52,13 @@
 .active {
   background: black;
   color: white;
-  // font-weight: 500;
 }
 
 .loader {
   animation-name: spin;
   animation-duration: 1000ms;
   animation-iteration-count: infinite;
-  animation-timing-function: linear; 
+  animation-timing-function: linear;
 }
 
 i {
@@ -69,7 +67,7 @@ i {
 }
 
 .tab-item:not(.active):hover i {
-  margin-left: 26px
+  margin-left: 26px;
 }
 
 .active i {
@@ -78,10 +76,10 @@ i {
 
 @keyframes spin {
   from {
-      transform:rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-      transform:rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -103,7 +101,7 @@ i {
   .tabs-wrapper {
     flex-direction: column;
   }
-  
+
   .tabs-nav {
     display: flex;
     flex-direction: column;
@@ -111,13 +109,9 @@ i {
   }
 
   .tab-item {
-    // border: none;
     flex-grow: 1;
-    // padding: 1rem;
-    // padding: 0 20vw;
     height: 50px;
     line-height: 50px;
-    // text-align: center;
   }
 
   .tab-display {

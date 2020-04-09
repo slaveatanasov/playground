@@ -20,9 +20,8 @@
 
 .button {
   background: black;
-  // height: 34px;
   color: white;
-  padding: 0 2.50rem;
+  padding: 0 2.5rem;
   line-height: 30px;
   font-size: 10px;
   font-weight: 300;
@@ -49,9 +48,7 @@ p {
 }
 
 @media (max-width: 850px) {
-
   .cookies-policy-wrapper {
     padding: 2.5rem;
   }
 }
-

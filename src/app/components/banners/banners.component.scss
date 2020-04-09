@@ -67,7 +67,6 @@
   border: 1px solid rgba(0, 0, 0, 0);
   background: rgb(90, 89, 89);
   cursor: pointer;
-  // box-shadow: 0px 0px 20px -1px rgba(255, 255, 255, 0.75);
   box-shadow: 0px 0px 1px 9px rgba(255, 255, 255, 0.5);
 }
 
@@ -85,7 +84,6 @@
   border: 1px solid rgba(0, 0, 0, 0);
   background: rgb(226, 226, 226);
   cursor: pointer;
-  // box-shadow: 0px 0px 20px -1px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 1px 9px rgba(0, 0, 0, 0.5);
 }
 
@@ -130,8 +128,6 @@
   display: none;
 }
 
-
-
 @media (max-width: 1128px) {
   .banner-r {
     bottom: 0;
@@ -170,8 +166,7 @@
     justify-content: space-around;
     background: black;
     padding: 120px;
-    // background: linear-gradient(0deg, rgba(255,255,255,1) 1%, rgba(0,0,0,0.6) 30%);
-    background: rgba(0, 0, 0, 0.350);
+    background: rgba(0, 0, 0, 0.35);
   }
 
   .text-mobile-rev {
@@ -182,16 +177,10 @@
     padding: 120px;
     color: black;
   }
-
-  // .gradient-reversed {
-  //   // background: linear-gradient(0deg rgba(0,0,0,0.6) 1%, rgba(255,255,255,1) 30%);
-  //   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 55%, white 100%);
-  // }
 }
 
 @media (max-width: 900px) {
   .text-mobile {
-    // display: block;
     height: 100%;
     display: flex;
     align-items: center;

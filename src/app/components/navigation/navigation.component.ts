@@ -1,5 +1,4 @@
-import { Component, OnInit, HostListener, Inject } from '@angular/core';
-import { DOCUMENT } from '@angular/common';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-navigation',
@@ -9,7 +8,7 @@ import { DOCUMENT } from '@angular/common';
 export class NavigationComponent implements OnInit {
   navScrolled: boolean;
 
-  constructor(@Inject(DOCUMENT) document) { }
+  constructor() { }
 
   ngOnInit() {
     this.navScrolled = false;
@@ -17,15 +16,11 @@ export class NavigationComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(e) {
-     if (window.pageYOffset > 150) {
-      //  let element = document.getElementById('navbar');
-      //  element.classList.add('nav-scrolled');
+    if (window.pageYOffset > 150) {
       this.navScrolled = true;
-     } else {
-      // let element = document.getElementById('navbar');
-      //   element.classList.remove('nav-scrolled'); 
+    } else {
       this.navScrolled = false;
-     }
+    }
   }
 
 }
