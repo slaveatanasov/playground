@@ -7,10 +7,10 @@
   </div>
   <div class="menu-wrapper">
     <ul class="menu" [ngClass]="{'nav-scrolled-menu': navScrolled}">
-      <li class="menu-item color-muted-white"><span>we are</span></li>
-      <li class="menu-item color-muted-white"><span>we do</span></li>
-      <li class="menu-item color-muted-white"><span>careers</span></li>
-      <li class="menu-item color-muted-white"><span>contact us</span></li>
+      <li [ngx-scroll-to]="'#weAreScroll'" [ngx-scroll-to-offset]="-100" class="menu-item color-muted-white"><span>we are</span></li>
+      <li [ngx-scroll-to]="'#weDoScroll'" [ngx-scroll-to-offset]="-100" class="menu-item color-muted-white"><span>we do</span></li>
+      <li [ngx-scroll-to]="'#careersScroll'" [ngx-scroll-to-offset]="-100" class="menu-item color-muted-white"><span>careers</span></li>
+      <li [ngx-scroll-to]="'#contactScroll'" class="menu-item color-muted-white"><span>contact us</span></li>
     </ul>
   </div>
 </nav>

@@ -28,7 +28,11 @@
 .tab-item {
   background: rgb(196, 194, 194);
   border-top: 1px solid rgba(255, 255, 255, 0.548);
-  padding: 1.2rem 6rem;
+  height: 50px;
+  line-height: 50px;
+  width: 320px;
+  padding-left: 2rem;
+
   font-weight: 300;
   cursor: pointer;
   transition: 0.1s;
@@ -49,7 +53,7 @@
 .active {
   background: black;
   color: white;
-  font-weight: 500;
+  // font-weight: 500;
 }
 
 .loader {
@@ -57,6 +61,19 @@
   animation-duration: 1000ms;
   animation-iteration-count: infinite;
   animation-timing-function: linear; 
+}
+
+i {
+  margin-left: 10px;
+  transition: 0.5s;
+}
+
+.tab-item:not(.active):hover i {
+  margin-left: 26px
+}
+
+.active i {
+  transform: rotate(90deg);
 }
 
 @keyframes spin {
@@ -90,16 +107,17 @@
   .tabs-nav {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
   .tab-item {
     // border: none;
     flex-grow: 1;
     // padding: 1rem;
-    padding: 0 20vw;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
+    // padding: 0 20vw;
+    height: 50px;
+    line-height: 50px;
+    // text-align: center;
   }
 
   .tab-display {
@@ -110,6 +128,10 @@
 
 @media (max-width: 600px) {
   .tabs-nav {
+    width: 100%;
+  }
+
+  .tab-item {
     width: 100%;
   }
 }

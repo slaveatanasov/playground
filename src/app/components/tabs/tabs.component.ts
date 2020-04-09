@@ -75,8 +75,6 @@ export class TabsComponent implements OnInit {
         }, 800)
       }
     })
-
-    console.log(this.selectedItem)
   }
 
   displaySelected(id: number) {

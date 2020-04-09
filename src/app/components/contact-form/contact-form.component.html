@@ -1,4 +1,4 @@
-<div class="form-wrapper">
+<div class="form-wrapper" id="contactScroll">
   <div class="form-l">
     <div class="text">
       <h1>contact<br>us.</h1>
@@ -11,23 +11,31 @@
     </div>
   </div>
   <div class="form-r">
-    <form>
+    <form name="form" #f="ngForm" (ngSubmit)='f.form.valid && formSent()'>
       <div class="name-row">
         <div class="form-group">
-          <input type="text" class="form-control color-muted-white" id="first-name" required placeholder="name">
+          <input type="text" class="form-control color-muted-white" id="first-name" required placeholder="name" name="firstName" [(ngModel)]="messageBox.firstName" #firstName="ngModel">
+          <p class="error-notif" *ngIf="firstName.touched && firstName.errors?.required">First name is required</p>
         </div>
         <div class="form-group">
-          <input type="text" class="form-control color-muted-white" id="last-name" required placeholder="last name">
+          <input type="text" class="form-control color-muted-white" id="last-name" required placeholder="last name"  name="lastName" [(ngModel)]="messageBox.lastName" #lastName="ngModel">
+          <p class="error-notif" *ngIf="lastName.touched && lastName.errors?.required">Last name is required</p>
         </div>
       </div>
-      <div class="form-group">
-        <input type="email" class="form-control color-muted-white" id="email" required placeholder="email">
+      <div class="email-row">
+        <div class="form-group">
+          <input type="email" class="form-control color-muted-white" id="email" required placeholder="email" name="email" email [(ngModel)]="messageBox.email" #email="ngModel">
+          <p class="error-notif" *ngIf="email.touched && email.errors?.required">Email is required</p>
+          <p class="error-notif" *ngIf="email.errors?.email">Email must be a valid email address</p>
+        </div>
       </div>
+
       <div class="form-group">
         <textarea rows="7" class="form-control color-muted-white" placeholder="message" id="message"></textarea>
       </div>
       <div>
-        <div class="button letter-spacing-button"><span>SEND</span></div>
+        <!-- <div class="button letter-spacing-button" (click)='formSent()' ><span>SEND</span><i class="fa fa-angle-right"></i></div> -->
+        <button type='submit' class="button letter-spacing-button" [disabled]='f.form.invalid'><span>SEND</span><i class="fa fa-angle-right"></i></button>
       </div>
     </form>
   </div>

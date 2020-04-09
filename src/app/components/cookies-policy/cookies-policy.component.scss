@@ -47,3 +47,11 @@ p {
 .display-none-2 {
   display: none;
 }
+
+@media (max-width: 850px) {
+
+  .cookies-policy-wrapper {
+    padding: 2.5rem;
+  }
+}
+
