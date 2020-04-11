@@ -169,6 +169,10 @@
     background: rgba(0, 0, 0, 0.35);
   }
 
+  .text-mobile p {
+    color: #e0e0e0;
+  }
+
   .text-mobile-rev {
     width: 100%;
     display: flex;
@@ -188,7 +192,17 @@
     justify-content: center;
   }
 
+  .text-mobile h1 {
+    font-size: 3rem;
+  }
+
   .text-mobile p {
-    margin: 2rem 0;
+    margin: 1.5rem 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .text-mobile {
+    padding: 1rem;
   }
 }

@@ -67,7 +67,7 @@
   color: white;
 }
 
-@media (max-width: 1128px) {
+@media (max-width: 1200px) {
   .cards-wrapper {
     flex-direction: column;
     padding: 0 12rem;
@@ -77,6 +77,10 @@
   .card {
     width: 100%;
     margin: 0;
+  }
+
+  .card:nth-child(2) {
+    background: #ffffffb8;
   }
 
   .card-title-1,

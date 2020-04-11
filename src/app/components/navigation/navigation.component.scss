@@ -63,7 +63,7 @@ nav {
 @media (max-width: 800px) {
   nav {
     flex-direction: column;
-    height: auto;
+    height: 13vh;
   }
 
   .logo-wrapper {
@@ -78,4 +78,5 @@ nav {
     line-height: normal;
     height: auto;
   }
+
 }
